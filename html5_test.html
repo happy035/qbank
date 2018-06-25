@@ -1,0 +1,43 @@
+<!-- HTML5 basic layout -->
+<!doctype html>
+<html>
+    <title>Question Bank v 0.1</title>
+<body>
+    <form name="userAdd" action="" method="POST">
+        <div>
+            <span>
+                난이도: <input type="radio" name="severity" value="1" checked> 초급
+                <input type="radio" name="severity" value="2" > 중급
+                <input type="radio" name="severity" value="3" > 고급
+            </span> <p/>
+            <span>
+                    대분류 : <select name"catBig">
+                            <option value="Network" selected> Network </option>
+                            <option value="System"> System </option>
+                            <option value="Security"> Security </option>
+                        </select>                
+            </span>
+            <span>
+                    증분류 : <select name"catMid">
+                            <option value="HTTP" selected> HTTP </option>
+                            <option value="DNS"> DNS </option>
+                            <option value="FTP"> FTP</option>
+                    </select>
+            </span>
+        </div><p/>
+        <div>
+            사용자 ID : <input type="text" name="userName" placeholder="사용자 ID" required><p/>
+        </div>
+        <div>
+            비밀번호 : <input type="password" name="userPwd" placeholder="비밀번호" required><p/>
+        </div>
+        <div>
+            문제 : <textarea row="5" cols="50" name="q_sentence" placeholder="문제를 입력하세요."></textarea><p/>
+        </div>
+        <div>
+            <span><input type="submit" value="보내기"> </span>
+            <span><input type="reset"  value="새로작성"></span>
+        </div>
+    </form>
+</body>
+</html>
